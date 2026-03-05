@@ -1,0 +1,20 @@
+{
+  "name": "student-feedback-server",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/DelevopmentBEAR/Topic-8---Web-Servers-and-API-Severs-with-Express#readme",
+  "bugs": {
+    "url": "https://github.com/DelevopmentBEAR/Topic-8---Web-Servers-and-API-Severs-with-Express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DelevopmentBEAR/Topic-8---Web-Servers-and-API-Severs-with-Express.git"
+  },
+  "license": "ISC",
+  "author": "Berit Haugen",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
