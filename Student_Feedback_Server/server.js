@@ -2,12 +2,20 @@
 const express = require('express')
 // Connects various paths together to the files in our folder
 const path = require('path')
+const bodyParser = require('body-parser')
 
 // Connects specifically to index.js file
-const indexRouter = require('./route/index.js')
+const indexRouter = require('./student_routes/index')
 
 // Creates the web app server
 const app = express()
+
+// enable parsing of POST request form body
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// serve static files, such as CSS
+const staticFileLocation = path.join(__dirname, 'public')
+app.use(express.static(staticFileLocation))
 
 // Connects express library to 'views' folder and any files in that folder using 'path'
 // AKA tells app where the views (HTML files or templates) are
