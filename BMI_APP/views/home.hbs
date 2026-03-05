@@ -2,11 +2,12 @@
 
 <h2>Enter your data</h2>
 
-<form>
+<form action="/calculate">
     <label for="height">Height in meters</label>
+    {{!-- Make this accept decimals! --}}
         <input id="height" type="number" name="height">
     <br>
-    <label for="weight">Weight in pounds</label>
+    <label for="weight">Weight in kilograms</label>
         <input id="weight" type="number" name="weight">
     <br>
     <button type="submit">Calculate</button>   
