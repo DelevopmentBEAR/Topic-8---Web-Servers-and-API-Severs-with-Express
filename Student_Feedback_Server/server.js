@@ -4,7 +4,7 @@ const express = require('express')
 const path = require('path')
 
 // Connects specifically to index.js file
-const indexRouter = require('./Routes/index.js')
+const indexRouter = require('./route/index.js')
 
 // Creates the web app server
 const app = express()

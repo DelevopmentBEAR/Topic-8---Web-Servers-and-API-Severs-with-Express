@@ -6,7 +6,11 @@ const router = express.Router() // Figures out what code to run is response to a
 // req = Request, res = Response, next (passes request onto something else)
 router.get('/', function(req, res, next) {
     // Name of handlebars file - name of a template, optional object with data for template
-    res.render('index', {title: 'Feedback Application'})
+    res.render('index', {
+        title: 'Feedback Application',
+        author: 'Berit',
+        timePageLoadedAt: new Date()
+    })
 }) 
 
 // Returns the router object to whatever else needs this file
