@@ -18,6 +18,22 @@ router.get('/feedback-form', function(req, res, next) {
     res.render('student_feedback_form')
 })
 
+// Collects form data and reroutes it to /submit-feedback
+router.get('/submit-feedback', function(req, res, next) {
+    // Access form data
+    const formData = req.query
+    console.log(formData)
+
+    // Formats data from feedback for thank-you page
+    res.render('thank_you', {
+        name: formData.name,
+        email: formData.email,
+        comments: formData.comments,
+        // This isn't working for some reason?
+        currentStudent: formData['current-student']
+    })
+})
+
 // Returns the router object to whatever else needs this file
 // NEEDS to be at end of our file
 module.exports = router
