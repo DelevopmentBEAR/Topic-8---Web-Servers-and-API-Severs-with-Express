@@ -13,6 +13,11 @@ router.get('/', function(req, res, next) {
     })
 }) 
 
+// Connects to student feedback form web page
+router.get('/feedback-form', function(req, res, next) {
+    res.render('student_feedback_form')
+})
+
 // Returns the router object to whatever else needs this file
 // NEEDS to be at end of our file
 module.exports = router
