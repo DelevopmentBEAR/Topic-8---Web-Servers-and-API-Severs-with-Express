@@ -19,9 +19,11 @@ router.get('/feedback-form', function(req, res, next) {
 })
 
 // Collects form data and reroutes it to /submit-feedback
-router.get('/submit-feedback', function(req, res, next) {
+// POST request is encrypted
+router.post('/submit-feedback', function(req, res, next) {
     // Access form data
-    const formData = req.query
+    // const formData = req.query = for a GET reuest - read the URL query
+    const formData = req.body // for a POST request
     console.log(formData)
 
     // Formats data from feedback for thank-you page
