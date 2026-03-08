@@ -26,13 +26,20 @@ router.post('/submit-feedback', function(req, res, next) {
     const formData = req.body // for a POST request
     console.log(formData)
 
+    // Handle checkbox: If checked, show "Yes"; otherwise, "No"
+    const currentStudent = formData['current-student'] ? 'Yes' : 'No'
+
+    // TODO - save to a database
+    // automatically email someone when feedback was submitted
+
     // Formats data from feedback for thank-you page
     res.render('thank_you', {
         name: formData.name,
         email: formData.email,
         comments: formData.comments,
-        // This isn't working for some reason?
-        currentStudent: formData['current-student']
+        // This wasn't working for some reason? 
+        // But I asked AI for help and they suggested handle checkbox
+        currentStudent: currentStudent
     })
 })
 

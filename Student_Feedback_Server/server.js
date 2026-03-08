@@ -10,10 +10,10 @@ const indexRouter = require('./student_routes/index')
 // Creates the web app server
 const app = express()
 
-// enable parsing of POST request form body
+// Enables parsing of POST request form body
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// serve static files, such as CSS
+// Serves static files, such as CSS
 const staticFileLocation = path.join(__dirname, 'public')
 app.use(express.static(staticFileLocation))
 
