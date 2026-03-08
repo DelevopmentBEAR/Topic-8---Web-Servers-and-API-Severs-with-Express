@@ -1,0 +1,2 @@
+node_modules
+# Will let github ignore the node_modules if you don't want to upload all of that.
