@@ -29,6 +29,3 @@ app.use('/', indexRouter)
 const server = app.listen(process.env.PORT || 3000, function() {
     console.log('Server running on port', server.address().port)
 })
-
-// For whatever reason, the node and package JSON want to be 
-// outside the folder and not in it. I can't run the website without them there.
