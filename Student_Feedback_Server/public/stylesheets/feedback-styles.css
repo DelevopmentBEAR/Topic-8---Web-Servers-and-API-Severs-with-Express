@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+    font-family: "Playwrite NZ Basic", cursive;
+} 
+.header {
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: underline;
+}
+.intro {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+}
